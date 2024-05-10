@@ -1,0 +1,20 @@
+learning_rate=0.005
+batch_size=48
+num_epochs=100
+list_filters=[48,40,32,16,8]
+list_kernels=[7,5,5,3,3]
+pooling = ['max','avg','max','avg']
+conv_dropout=[0.2,0.2,0.2,0.2,0.2,0.2]
+global_pool = 'avg'
+input_neurons=[56, 48,32]
+input_dropout= [0.2,0.2,0.2]
+concat_neurons=[64, 32, 2]
+concat_dropout=[0.2,0.2]
+kerenel_constraint= 1
+conv_activation=['swish','swish','swish','mish','mish']
+pooling_activation=['swish','swish','swish','mish','mish']
+input_activation=['sigmoid','tanh','tanh']
+hidden_activation=['swish','swish','mish']
+concat_activation=['sigmoid','tanh','linear']
+concat_hidden_activation=['sigmoid','tanh']
+

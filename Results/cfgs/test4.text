@@ -1,0 +1,22 @@
+learning_rate=0.0005
+batch_size=48
+num_epochs=100
+list_filters=[64,48,40,32,16,8]
+list_kernels=[7,7,5,5,3,3]
+pooling = ['avg','max','avg','max','avg']
+conv_dropout=[0.5,0.25,0.25,0.25,0.25,0.25]
+global_pool = 'avg'
+input_neurons=[40, 40, 24]
+input_dropout= [0.5,0.25,0.25,0.25]
+concat_neurons=[64, 32, 2]
+concat_dropout=[0.5,0.25]
+kerenel_constraint= 1
+conv_activation=[activation_dict['Swish'],activation_dict['Swish'],activation_dict['Swish'],activation_dict['Mish'],activation_dict['Mish'],activation_dict['Mish']]
+pooling_activation= [activation_dict['Swish'],activation_dict['Swish'],activation_dict['Swish'],activation_dict['Mish'],activation_dict['Mish'],activation_dict['Mish']]
+input_activation=[activation_dict['Sigmoid'],activation_dict['Tanh'],activation_dict['Swish'],activation_dict['Sigmoid']]
+hidden_activation=[activation_dict['Sigmoid'],activation_dict['Tanh'],activation_dict['Swish'],activation_dict['Sigmoid']]
+concat_activation=[activation_dict['Sigmoid'], activation_dict['Tanh'],activation_dict['Linear']]
+concat_hidden_activation=[activation_dict['Sigmoid'], activation_dict['Tanh']]
+mode = 'train'
+test_number=2
+
