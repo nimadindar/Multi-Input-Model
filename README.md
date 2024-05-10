@@ -35,6 +35,7 @@ ieeexplore.ieee.org/abstract/document/8103116
 ## Requirements
 
 - Python
-- TensorFlow/Keras (or any other deep learning framework you prefer)
-
+- TensorFlow/Keras
+- numpy
+- sklearn
 Feel free to explore and enhance this repository for your multi-input deep learning model experiments!
